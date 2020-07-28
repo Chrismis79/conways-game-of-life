@@ -23,26 +23,27 @@ class Buttons extends Component {
         return (
             <div className="center">
                 <ButtonToolbar>
-                    <Button onClick={this.props.playButton}>
+                    <Button style={{ backgroundColor: '#6B969B' }} onClick={this.props.playButton}>
                         Play
                     </Button>
-                    <Button onClick={this.props.pauseButton}>
+                    <Button style={{ backgroundColor: '#6B969B' }} onClick={this.props.pauseButton}>
                         Pause
                     </Button>
-                    <Button onClick={this.props.clear}>
+                    <Button style={{ backgroundColor: '#6B969B' }} onClick={this.props.clear}>
                         Clear
-                    </Button><Button onClick={this.props.slow}>
+                    </Button>
+                    <Button style={{ backgroundColor: '#6B969B' }} onClick={this.props.slow}>
                         Slow
                     </Button>
-                    <Button onClick={this.props.fast}>
+                    <Button style={{ backgroundColor: '#6B969B' }} onClick={this.props.fast}>
                         Fast
                     </Button>
-                    <Button onClick={this.props.seed}>
+                    <Button style={{ backgroundColor: '#6B969B' }} onClick={this.props.seed}>
                         Seed
                     </Button>
-                    <ButtonDropdown>
+                    <ButtonDropdown >
                         <Dropdown isOpen={this.state.dropdownOpen} toggle={this.toggle}>
-                            <DropdownToggle caret>Select Grid Size</DropdownToggle>
+                            <DropdownToggle style={{ backgroundColor: '#6B969B' }} caret>Select Grid Size</DropdownToggle>
                             <DropdownMenu>
                                 <DropdownItem onClick={() => this.handleSelect('1')}>20X10</DropdownItem>
                                 <DropdownItem onClick={() => this.handleSelect('2')}>50X30</DropdownItem>
