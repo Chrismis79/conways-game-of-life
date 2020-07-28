@@ -65,6 +65,25 @@ class App extends React.Component {
     })
   }
 
+  gridSize = (size) => {
+    console.log("size:", size)
+    switch (size) {
+      case "1":
+        this.cols = 20;
+        this.rows = 10;
+        break;
+      case "2":
+        this.cols = 50;
+        this.rows = 30;
+        break;
+      default:
+        this.cols = 70;
+        this.rows = 50;
+
+    }
+    this.clear();
+  }
+
   play = () => {
     let g = this.state.gridFull;
     let g2 = arrayClone(this.state.gridFull);

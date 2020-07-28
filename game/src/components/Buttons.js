@@ -45,9 +45,9 @@ class Buttons extends Component {
                         <Dropdown isOpen={this.state.dropdownOpen} toggle={this.toggle}>
                             <DropdownToggle caret>Select Grid Size</DropdownToggle>
                             <DropdownMenu>
-                                <DropdownItem onClick={() => this.handleSelect('20X10')}>20X10</DropdownItem>
-                                <DropdownItem onClick={() => this.handleSelect('50X30')}>50X30</DropdownItem>
-                                <DropdownItem onClick={() => this.handleSelect('70X50')}>70X50</DropdownItem>
+                                <DropdownItem onClick={() => this.handleSelect('1')}>20X10</DropdownItem>
+                                <DropdownItem onClick={() => this.handleSelect('2')}>50X30</DropdownItem>
+                                <DropdownItem onClick={() => this.handleSelect('3')}>70X50</DropdownItem>
                             </DropdownMenu>
                         </Dropdown>
                     </ButtonDropdown>
