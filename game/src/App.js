@@ -47,6 +47,24 @@ class App extends React.Component {
     clearInterval(this.intervalId);
   }
 
+  fast = () => {
+    this.speed = 100;
+    this.playButton();
+  }
+
+  slow = () => {
+    this.speed = 1000;
+    this.playButton();
+  }
+
+  clear = () => {
+    let grid = Array(this.rows).fill().map(() => Array(this.cols).fill(false));
+    this.setState({
+      gridFull: grid,
+      generation: 0
+    })
+  }
+
   play = () => {
     let g = this.state.gridFull;
     let g2 = arrayClone(this.state.gridFull);
@@ -81,7 +99,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <h1>John Conway's Game of Life</h1>
+        <h1 className='center'>John Conway's Game of Life</h1>
         <Buttons
           playButton={this.playButton}
           pauseButton={this.pauseButton}
@@ -97,7 +115,7 @@ class App extends React.Component {
           cols={this.cols}
           selectBox={this.selectBox}
         />
-        <h2>Generations: {this.state.generation}</h2>
+        <h2 className="center">Generations: {this.state.generation}</h2>
       </div>
     )
   }
