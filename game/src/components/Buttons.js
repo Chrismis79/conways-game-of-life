@@ -3,7 +3,6 @@ import { Button, ButtonToolbar, DropdownItem, ButtonDropdown, Dropdown, Dropdown
 
 class Buttons extends Component {
     constructor(props) {
-        console.log(props)
         super(props);
         this.state = {
             dropdownOpen: false,

@@ -29,11 +29,19 @@ code {
 }
 
 .on {
-  background-color: aquamarine;
+  background-color: #6B969B;
+}
+
+.birth {
+  background-color: #D2BD8E;
+}
+
+.death {
+  background-color: #D2BD8E;
 }
 
 .box:hover {
-  background: #00CCFF
+  background: #C49EA1
 }
 
 .center {
@@ -52,4 +60,11 @@ code {
 
 h1, h2, h3, h4 {
   margin-top: 0px;
+  color: white;
+  font-weight: bold;
 }
+ li{
+   color: white;
+   font-weight: 500;
+   font-size: 18px;
+ }
