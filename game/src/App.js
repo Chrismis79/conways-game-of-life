@@ -162,6 +162,7 @@ class App extends React.Component {
         <ul className='center'>
           <h3>Game Play</h3>
           <li>This is a 0 player game. Meaning, you start it and watch.</li>
+          <li>Each cell can have up to 8 neighbors, 4 on the sides + 4 diagonals.</li>
           <li>Start by clicking 'seed', then play and watch what happens. Notice any patterns?</li>
           <li>You can 'clear' the grid and make your own shapes by clicking on the grid boxes to make them come alive.</li>
           <li>You can change the speed to 'fast' or 'slow.'</li>
