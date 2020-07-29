@@ -161,13 +161,13 @@ class App extends React.Component {
         <h2 className="center">Generations: {this.state.generation}</h2>
         <ul className='center'>
           <h3>Game Play</h3>
-          <li>This is a 0 player game.</li>
+          <li>This is a 0 player game. Meaning, you start it and watch.</li>
           <li>Start by clicking 'seed', then play and watch what happens. Notice any patterns?</li>
-          <li>You can clear the grid and make your own shapes by clicking on the grid boxes to make them come alive.</li>
+          <li>You can 'clear' the grid and make your own shapes by clicking on the grid boxes to make them come alive.</li>
           <li>You can change the speed to 'fast' or 'slow.'</li>
           <li>Each cell follows a specific set of rules:
           <ul>
-              <li>Any cell with fewer then 2 live neighbors dies, as if by underpopulation</li>
+              <li>Any cell with fewer than 2 live neighbors dies, as if by underpopulation</li>
               <li>Any cell with 2 or 3 neighbors lives onto the next generation.</li>
               <li>Any cell with more than 3 live neighbors dies, as if by overpopulation</li>
               <li>Any dead cell with exactly 3 live neighbors becomes alive in the next generation.</li>
